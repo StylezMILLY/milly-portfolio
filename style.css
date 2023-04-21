@@ -441,7 +441,6 @@ body{
    .col-2{
     font-size: 14px;
     padding: 20px;
-    margin-left: 10px;
    }
 
    .service-list{
@@ -561,7 +560,6 @@ body{
 .col-2{
   flex-basis: 60%;
   margin-top: 10%;
-  display: inline-block;
 }
 .sub-tittle{
    font-size: 40px;
