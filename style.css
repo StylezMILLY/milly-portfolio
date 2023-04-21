@@ -548,6 +548,7 @@ body{
 .col-1{
   flex-basis: 35%;
   margin-left: 60px;
+  display: flex;
 
 }
 
@@ -558,8 +559,9 @@ body{
 }
 
 .col-2{
-  flex-basis: 55%;
+  flex-basis: 60%;
   margin-top: 10%;
+  display: inline-block;
 }
 .sub-tittle{
    font-size: 40px;
