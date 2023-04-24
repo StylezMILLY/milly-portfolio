@@ -437,12 +437,12 @@ body{
 }
 
 .header-text{
-  margin-top: 60%;
+  margin-top: 40%;
   font-size: 35PX;
 }
 
 .header-text h1{
-  font-size: 40px;
+  font-size: 20px;
   margin-top: 20px;
 }
 
@@ -481,6 +481,7 @@ body{
  font-size: 15px;
  margin-left: 20px;
  margin-right: 20px;
+ padding: 30px;
 }
 
 .work-list{
