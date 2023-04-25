@@ -21,15 +21,16 @@
     <div class="container">
         <nav id="sidemenu">
             <h2 class="sub-tittle">Faden <span>GIFT</span></h2>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+            <i class="fa-solid fa-bars"  id="toggleBtn"></i>
         </nav>
+        <ul id="menu">
+            <li><a href="">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
         <div class="header-text">
            
             <h1 class="animate__animated animate__bounce animate__zoomIn animate__delay-s">HELLO I'M <br><span class="fluck"></span></h1>
@@ -143,6 +144,8 @@
 
 
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script>
@@ -155,15 +158,21 @@
     </script>
 
     <script>
+        let toggleBtn = document.getElementById("toggleBtn")
+        let menu = document.getElementById("menu")
+        let list = document.getElementById("list")
 
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu(){
-            sidemenu.style.right = "-200px";
+        toggleBtn.onclick = function(){
+            if(menu.style.height=="0px"){
+                menu.style.backgroundColor="black";
+                menu.style.height="200px";
+                list.style.display="block";
+                menu.style.transition = "0.5s ease-in height";
+            }else{
+                menu.style.height="0px";
+                menu.style.transition = "0.5s ease-in height";
+                list.style.display="none";
+            }
         }
     </script>
 </body>

@@ -317,12 +317,36 @@ body{
     overflow-x: hidden;
   
   }
+ nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
 
-   #sidemenu ul {
-    display: none;
+ #menu {
+  display: block;
+  list-style-type: none;
+  margin: 10px 20px;
+}
+
+#menu li a{
+  color: #ababab;
+  font-size: 13px;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+
+   #menu{
+    height: 0px;
 
    }
 
+   #sidemenu ul li{
+    margin-bottom: 10px;
+
+   }
    #sidemenu .fa-bars{
     display: block;
    }
@@ -330,6 +354,17 @@ body{
    #sidemenu .sub-tittle{
     font-size: 22px;
    }
+   
+
+ 
+
+ nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+ }
+
 
    #header{
     width: 100%;
@@ -364,7 +399,7 @@ body{
 
 .col-1 img{
   width: 60%;
-  height: fit-content;
+  height: 50%;
   border-radius: 15px;
 }
 
@@ -414,6 +449,62 @@ body{
   
   }
 
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+  
+   #menu {
+    display: block;
+    list-style-type: none;
+    margin: 10px 20px;
+  }
+  
+  #menu li a{
+    color: #ababab;
+    font-size: 13px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  
+     #menu{
+      height: 0px;
+  
+     }
+  
+     #sidemenu ul li{
+      margin-bottom: 10px;
+  
+     }
+     #sidemenu .fa-bars{
+      display: block;
+     }
+  
+     #sidemenu .sub-tittle{
+      font-size: 22px;
+     }
+     
+  
+   
+  
+   nav ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+   }
+  
+  
+
    #sidemenu ul {
     display: none;
 
@@ -461,7 +552,7 @@ body{
 
 .col-1 img{
   width: 40%;
-  height: fit-content;
+  height: 50%;
   border-radius: 20px;
   margin-left: 90px;
 }
@@ -511,6 +602,63 @@ body{
  }
 
  @media only screen and (min-width: 768px) {
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+  
+   #menu {
+    display: block;
+    list-style-type: none;
+    margin: 5px 10px;
+    background-color: #b54769 !important;
+  }
+  
+  #menu li a{
+    color: #ababab;
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+  }
+  
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  
+     #menu{
+      height: 0px;
+  
+     }
+  
+     #sidemenu ul li{
+      margin-bottom: 10px;
+  
+     }
+     #sidemenu .fa-bars{
+      display: block;
+     }
+  
+     #sidemenu .sub-tittle{
+      font-size: 22px;
+     }
+     
+  
+   
+  
+   nav ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+   }
+  
+  
+
   #header{
     width: 100%;
     height: 100vh;
@@ -601,6 +749,56 @@ body{
       background-size: cover;
       background-position: center;
   }
+
+  #sidemenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #sidemenu i{
+    display: none;
+  }
+
+  #menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60%;
+    margin-top: -25px;
+  }
+
+  #menu li a{
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: 0.1s, color, 0.8s;
+
+  }
+#menu li a:hover{
+  background-color: #b54769;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+#menu li a::after{
+  background-color: #b54769;
+  font-size: 18px;
+}
+
+  #menu i{
+    display: none;
+  }
+
+  #toggleBtn.fa-solid.fa-bars::before{
+    display: none;
+  }
+
+  #sidemenu .sub-tittle{
+    font-size: 40px;
+  }
   
   .container{
       padding: 10px 10%;
@@ -618,7 +816,7 @@ body{
    }
 
    #sidemenu ul{
-    display: block;
+    display: flex;
    }
   
    nav ul li{
