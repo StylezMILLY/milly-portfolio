@@ -394,6 +394,7 @@ body{
 .col-1{
   flex-basis: 35%;
   margin-left: 26px;
+  display: none;
 
 }
 
@@ -401,6 +402,7 @@ body{
   width: 60%;
   height: 500px;
   border-radius: 15px;
+  display: none;
 }
 
 .col-2{
@@ -547,6 +549,7 @@ body{
   flex-basis: 50%;
   margin-left: auto;
   margin-right: auto;
+  display: none;
 
 }
 
@@ -555,6 +558,7 @@ body{
   height: 520px;
   border-radius: 20px;
   margin-left: 90px;
+  display: none;
 }
 
 .col-2{
@@ -687,12 +691,14 @@ body{
 .col-1{
   flex-basis: 35%;
   margin-left: -38px;
+  display: block;
 }
 
 .col-1 img{
   width: 90%;
   height: fit-content;
   border-radius: 15px;
+  display: block;
 }
 
 .col-2{
@@ -877,6 +883,7 @@ body{
    .col-1{
      flex-basis: 35%;
      margin-left: -20px;
+     display: block;
   
    }
   
@@ -884,6 +891,7 @@ body{
      width: 90%;
      height: 65vh;
      border-radius: 15px;
+     display: block;
    }
   
    .col-2{
