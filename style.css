@@ -399,7 +399,7 @@ body{
 
 .col-1 img{
   width: 60%;
-  height: fit-content;
+  height: 500px;
   border-radius: 15px;
 }
 
@@ -552,7 +552,7 @@ body{
 
 .col-1 img{
   width: 40%;
-  height: fit-content;
+  height: 520px;
   border-radius: 20px;
   margin-left: 90px;
 }
