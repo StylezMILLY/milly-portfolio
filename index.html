@@ -24,13 +24,16 @@
             
             <i class="fa-solid fa-bars"  id="toggleBtn"></i>
         </nav>
-        <ul id="menu">
-            <li><a href="">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-        </ul>
+        <div id="menuContainer">
+            <ul id="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                
+            </ul>
+        </div>
+       
         <div class="header-text">
            
             <h1 class="animate__animated animate__bounce animate__zoomIn animate__delay-s">HELLO I'M <br><span class="fluck"></span></h1>
@@ -160,18 +163,19 @@
     <script>
         let toggleBtn = document.getElementById("toggleBtn")
         let menu = document.getElementById("menu")
+        let menuContainer = document.getElementById("menuContainer")
         let list = document.getElementById("list")
 
         toggleBtn.onclick = function(){
-            if(menu.style.height=="0px"){
-                menu.style.backgroundColor="black";
-                menu.style.height="200px";
-                list.style.display="block";
-                menu.style.transition = "0.5s ease-in height";
+            if(menuContainer.style.height=="0px"){
+                menuContainer.style.backgroundColor="#262626";
+                menuContainer.style.height="100px";
+                menuContainer.style.transition = "0.5s ease-in height";
+                menu.style.display="block";
             }else{
-                menu.style.height="0px";
-                menu.style.transition = "0.5s ease-in height";
-                list.style.display="none";
+                menuContainer.style.height="0px";
+                menuContainer.style.transition = "0.5s ease-in height";
+                menu.style.display="none";
             }
         }
     </script>

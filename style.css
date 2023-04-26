@@ -323,11 +323,21 @@ body{
   justify-content: space-between;
  }
 
+ #menuContainer{
+  height: 0px;
+ }
  #menu {
+  display: none;
+  list-style: none;
+ }
+ 
+
+
+ /* #menu {
   display: block;
   list-style-type: none;
   margin: 10px 20px;
-}
+} */
 
 #menu li a{
   color: #ababab;
@@ -711,7 +721,7 @@ body{
 }
 
 .col-2 p{
- padding-top: 30px;
+ padding-top: 18px;
 }
 
 .service-list{
@@ -904,7 +914,7 @@ body{
    }
   
    .col-2 p{
-    padding-top: 30px;
+    padding-top: 28px;
    }
   
    /* --------services------- */
